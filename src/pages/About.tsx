@@ -82,25 +82,25 @@ const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-12">
+      <div className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">About JAYLOCS</h1>
-            <p className="text-lg opacity-90 max-w-3xl mx-auto mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">About JAYLOCS</h1>
+            <p className="text-xl opacity-90 max-w-4xl mx-auto mb-8">
               Empowering beauty, one student at a time. We're more than a salon - we're your beauty partners in Meru.
             </p>
             
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {stats.map((stat, index) => {
                 const IconComponent = stat.icon
                 return (
                   <div key={index} className="text-center">
-                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
-                      <IconComponent className="w-6 h-6 text-white" />
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                      <IconComponent className="w-8 h-8 text-white" />
                     </div>
-                    <div className="text-2xl font-bold mb-1">{stat.number}</div>
-                    <div className="text-sm opacity-90">{stat.label}</div>
+                    <div className="text-3xl font-bold mb-2">{stat.number}</div>
+                    <div className="text-lg opacity-90">{stat.label}</div>
                   </div>
                 )
               })}
@@ -113,8 +113,8 @@ const About: React.FC = () => {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
+            <p className="text-xl text-gray-600 max-w-5xl mx-auto">
               JAYLOCS began as a dream to create a beauty sanctuary specifically designed for the unique needs 
               of university students in Meru. What started as a small operation has grown into a beloved 
               community fixture, serving hundreds of satisfied clients.
@@ -123,18 +123,18 @@ const About: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Why We Started JAYLOCS</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Why We Started JAYLOCS</h3>
               <div className="space-y-6">
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   As students ourselves, we understood the challenges of finding quality, affordable beauty services 
                   that fit into a student's schedule and budget. Too often, students had to choose between quality 
                   and affordability, or travel far from campus for professional services.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   JAYLOCS was created to bridge this gap. We wanted to create a space where Meru University students 
                   could access professional beauty services without breaking the bank, right here in their community.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   Today, we're proud to serve not just students, but the entire Meru community, from Maua to Nchiru 
                   and beyond. Our commitment to quality, affordability, and community remains stronger than ever.
                 </p>
@@ -163,8 +163,8 @@ const About: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-purple-50 to-pink-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Values</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-800 mb-8">Our Values</h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto">
               These core values guide everything we do at JAYLOCS
             </p>
           </div>
@@ -190,8 +190,8 @@ const About: React.FC = () => {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-800 mb-8">Meet Our Team</h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto">
               Our passionate team of beauty professionals is dedicated to making you look and feel amazing
             </p>
           </div>
@@ -237,8 +237,8 @@ const About: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-purple-50 to-pink-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Journey</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-800 mb-8">Our Journey</h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto">
               From humble beginnings to becoming Meru's favorite beauty destination
             </p>
           </div>
@@ -272,37 +272,37 @@ const About: React.FC = () => {
       </section>
 
       {/* Our Mission */}
-      <section className="py-20 bg-gradient-to-r from-pink-600 to-purple-600 text-white">
+      <section className="py-24 bg-gradient-to-r from-pink-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <div className="flex justify-center space-x-4 mb-8">
-              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <Scissors className="w-8 h-8" />
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <Scissors className="w-10 h-10" />
               </div>
-              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <Palette className="w-8 h-8" />
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <Palette className="w-10 h-10" />
               </div>
             </div>
-            <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
+            <h2 className="text-5xl md:text-6xl font-bold mb-8">Our Mission</h2>
           </div>
           
-          <p className="text-xl opacity-90 mb-8">
+          <p className="text-2xl opacity-90 mb-12 leading-relaxed">
             To empower every client who walks through our doors with confidence, beauty, and exceptional service. 
             We believe that looking good isn't a luxury - it's a right, especially for hardworking students building their futures.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
             <div>
-              <h3 className="text-lg font-semibold mb-3">Accessibility</h3>
-              <p className="opacity-90">Quality beauty services at student-friendly prices</p>
+              <h3 className="text-xl font-bold mb-4">Accessibility</h3>
+              <p className="opacity-90 text-lg">Quality beauty services at student-friendly prices</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-3">Excellence</h3>
-              <p className="opacity-90">Professional standards in every service we provide</p>
+              <h3 className="text-xl font-bold mb-4">Excellence</h3>
+              <p className="opacity-90 text-lg">Professional standards in every service we provide</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-3">Community</h3>
-              <p className="opacity-90">Building lasting relationships with our Meru family</p>
+              <h3 className="text-xl font-bold mb-4">Community</h3>
+              <p className="opacity-90 text-lg">Building lasting relationships with our Meru family</p>
             </div>
           </div>
         </div>

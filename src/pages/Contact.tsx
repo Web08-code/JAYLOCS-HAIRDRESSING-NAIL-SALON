@@ -108,14 +108,14 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-12">
+      <div className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
-              <MessageSquare className="w-7 h-7" />
+            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6">
+              <MessageSquare className="w-8 h-8" />
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3">Contact Us</h1>
-            <p className="text-lg opacity-90 max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
+            <p className="text-xl opacity-90 max-w-4xl mx-auto">
               Get in touch with our friendly team - we're here to help with all your beauty needs
             </p>
           </div>
@@ -126,40 +126,40 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-8">Get In Touch</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               {contactInfo.map((info, index) => {
                 return (
-                  <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${
+                  <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className={`w-14 h-14 bg-gradient-to-br ${
                       info.color === 'pink' 
                         ? 'from-pink-500 to-pink-600' 
                         : 'from-purple-500 to-purple-600'
-                    } rounded-lg flex items-center justify-center mb-4`}>
+                    } rounded-lg flex items-center justify-center mb-6`}>
                       {info.title === 'Location' && (
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                         </svg>
                       )}
                       {info.title === 'Phone' && (
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                         </svg>
                       )}
                       {info.title === 'Email' && (
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                       )}
                       {info.title === 'Working Hours' && (
-                        <Clock className="w-6 h-6 text-white" />
+                        <Clock className="w-7 h-7 text-white" />
                       )}
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">{info.title}</h3>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">{info.title}</h3>
                     <div className="space-y-1">
                       {info.details.map((detail, i) => (
-                        <p key={i} className="text-gray-600 text-sm">{detail}</p>
+                        <p key={i} className="text-gray-600 text-base">{detail}</p>
                       ))}
                     </div>
                   </div>
@@ -212,7 +212,7 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div>
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-8">Send Us a Message</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -318,8 +318,8 @@ const Contact: React.FC = () => {
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                 <div className="text-center">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 448 512">
+                      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
                     </svg>
                   </div>
                   <span className="text-sm text-gray-600">M-Pesa</span>
@@ -334,8 +334,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <svg className="w-8 h-8 text-purple-600" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h8.418c2.508 0 4.514.893 5.535 2.459 1.008 1.566 1.008 3.618 0 5.184-1.021 1.566-3.027 2.459-5.535 2.459h-4.94l-1.018 4.865h2.629c.484 0 .875.381.875.852 0 .471-.391.852-.875.852H7.076c-.484 0-.875-.381-.875-.852 0-.471.391-.852.875-.852zm1.646-7.896h3.735c1.756 0 3.045-.635 3.598-1.777.553-1.142.553-2.651 0-3.793-.553-1.142-1.842-1.777-3.598-1.777H9.34L8.722 13.441z"/>
+                    <svg className="w-8 h-8 text-purple-600" viewBox="0 0 384 512" fill="currentColor">
+                      <path d="M111.4 295.9c-3.5 19.2-17.4 108.7-21.5 123-.3 1.2-1 1.7-1.8 1.7-.4 0-.7-.2-1.1-.4l-39.8-13.1c-1.6-.5-2.4-2.2-1.4-3.9l67.7-119c1.2-2.1 4.2-2.4 5.8-.4 1.6 2-.3 4.5-2.3 4.9-32.6 7.3-65.2 14.8-97.8 22.2a4.79 4.79 0 0 1-2.9-9.1l128-29.7c.9-.2 1.9.1 2.3 1 .4.9.1 1.9-.6 2.5l-75.4 66.4c-1.4 1.2-3.6.8-4.4-.8-.8-1.6.3-3.5 2.1-3.5 12.7 0 25.5 0 38.2-.1 2.7 0 5.2 1.8 5.2 4.5zm21.8-208.8c0-2.9 2.4-5.2 5.2-5.2h9.4c2.9 0 5.2 2.3 5.2 5.2v64c0 2.9-2.3 5.2-5.2 5.2h-9.4c-2.9 0-5.2-2.3-5.2-5.2V87.1zm-82.4 64c0-2.9 2.4-5.2 5.2-5.2h9.4c2.9 0 5.2 2.3 5.2 5.2v64c0 2.9-2.3 5.2-5.2 5.2h-9.4c-2.9 0-5.2-2.3-5.2-5.2v-64zm164.9 0c0-2.9 2.4-5.2 5.2-5.2h9.4c2.9 0 5.2 2.3 5.2 5.2v64c0 2.9-2.3 5.2-5.2 5.2h-9.4c-2.9 0-5.2-2.3-5.2-5.2v-64zm82.4 0c0-2.9 2.4-5.2 5.2-5.2h9.4c2.9 0 5.2 2.3 5.2 5.2v64c0 2.9-2.3 5.2-5.2 5.2h-9.4c-2.9 0-5.2-2.3-5.2-5.2v-64zM242.4 0c2.9 0 5.2 2.3 5.2 5.2v64c0 2.9-2.3 5.2-5.2 5.2h-9.4c-2.9 0-5.2-2.3-5.2-5.2V5.2c0-2.9 2.3-5.2 5.2-5.2h9.4zm-82.4 0c2.9 0 5.2 2.3 5.2 5.2v64c0 2.9-2.3 5.2-5.2 5.2h-9.4c-2.9 0-5.2-2.3-5.2-5.2V5.2c0-2.9 2.3-5.2 5.2-5.2H160zm164.9 0c2.9 0 5.2 2.3 5.2 5.2v64c0 2.9-2.3 5.2-5.2 5.2h-9.4c-2.9 0-5.2-2.3-5.2-5.2V5.2c0-2.9 2.3-5.2 5.2-5.2h9.4z"/>
                     </svg>
                   </div>
                   <span className="text-sm text-gray-600">PayPal</span>
@@ -350,8 +350,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-6.222 6.222a.749.749 0 01-1.06 0L6.432 10.54a.75.75 0 111.061-1.061l3.323 3.323L16.507 7.1a.75.75 0 111.061 1.06z"/>
+                    <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 448 512">
+                      <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
                     </svg>
                   </div>
                   <span className="text-sm text-gray-600">KCB Paybill</span>
@@ -363,13 +363,13 @@ const Contact: React.FC = () => {
 
         {/* FAQ Section */}
         <div className="mt-20">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Frequently Asked Questions</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">{faq.question}</h3>
+                <p className="text-gray-600 text-lg leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

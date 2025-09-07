@@ -67,38 +67,38 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-pink-500 via-purple-600 to-pink-700 text-white">
+      <section className="relative bg-gradient-to-br from-pink-500 via-purple-600 to-pink-700 text-white py-20 md:py-32">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <Sparkles className="w-8 h-8 text-white" />
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <Sparkles className="w-10 h-10 text-white" />
               </div>
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               JAYLOCS
-              <span className="block text-xl md:text-3xl font-light mt-2">
+              <span className="block text-2xl md:text-4xl lg:text-5xl font-light mt-4">
                 HAIRDRESSING & NAIL SALON
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
               Premium beauty services for Meru University students and the community
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 to="/booking"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-pink-600 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-pink-600 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Book Appointment
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-3 w-6 h-6" />
               </Link>
               <Link
                 to="/about"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition-all duration-200"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-xl font-bold text-lg hover:bg-white hover:text-pink-600 transition-all duration-200 transform hover:scale-105"
               >
                 Learn More
               </Link>
@@ -108,36 +108,36 @@ const Home: React.FC = () => {
       </section>
 
       {/* Key Info Section */}
-      <section className="py-12 bg-gradient-to-r from-purple-50 to-pink-50">
+      <section className="py-16 bg-gradient-to-r from-purple-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-7 h-7 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Working Hours</h3>
-              <p className="text-gray-600">Thu-Sun: 8:30AM-7PM</p>
-              <p className="text-gray-600">Mon-Wed: CLOSED</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Working Hours</h3>
+              <p className="text-gray-600 text-lg">Thu-Sun: 8:30AM-7PM</p>
+              <p className="text-gray-600 text-lg">Mon-Wed: CLOSED</p>
             </div>
             
             <div className="text-center">
-              <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Location</h3>
-              <p className="text-gray-600">Nchiru, Meru</p>
-              <p className="text-gray-600">Serving Maua, Nchiru & surrounding areas</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Location</h3>
+              <p className="text-gray-600 text-lg">Nchiru, Meru</p>
+              <p className="text-gray-600 text-lg">Serving Maua, Nchiru & surrounding areas</p>
             </div>
             
             <div className="text-center">
-              <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-7 h-7 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Student Friendly</h3>
-              <p className="text-gray-600">Special rates for</p>
-              <p className="text-gray-600">Meru University students</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Student Friendly</h3>
+              <p className="text-gray-600 text-lg">Special rates for</p>
+              <p className="text-gray-600 text-lg">Meru University students</p>
             </div>
           </div>
         </div>
@@ -220,10 +220,10 @@ const Home: React.FC = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-6">
               Our Services
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Professional beauty services with premium quality and student-friendly prices
             </p>
           </div>
@@ -268,31 +268,31 @@ const Home: React.FC = () => {
       </section>
 
       {/* Important Announcements */}
-      <section className="py-16 bg-gradient-to-r from-pink-600 to-purple-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-pink-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Important Information</h2>
-            <p className="text-xl opacity-90">Please read before booking your appointment</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Important Information</h2>
+            <p className="text-2xl opacity-90">Please read before booking your appointment</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10">
               <div className="flex items-center mb-4">
-                <CheckCircle className="w-6 h-6 mr-3" />
-                <h3 className="text-xl font-semibold">Come Prepared</h3>
+                <CheckCircle className="w-8 h-8 mr-4" />
+                <h3 className="text-2xl font-bold">Come Prepared</h3>
               </div>
-              <p className="text-lg opacity-90">
+              <p className="text-xl opacity-90 leading-relaxed">
                 Please bring your own braids, hair products, and any materials needed for your service. 
                 We want to ensure you get exactly what you want!
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10">
               <div className="flex items-center mb-4">
-                <Sparkles className="w-6 h-6 mr-3" />
-                <h3 className="text-xl font-semibold">Hair Preparation</h3>
+                <Sparkles className="w-8 h-8 mr-4" />
+                <h3 className="text-2xl font-bold">Hair Preparation</h3>
               </div>
-              <p className="text-lg opacity-90">
+              <p className="text-xl opacity-90 leading-relaxed">
                 Come with freshly washed and blow-dried hair. This helps us provide the best 
                 service and ensures optimal results for your styling.
               </p>
@@ -337,27 +337,27 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-600 to-pink-600 text-white">
+      <section className="py-24 bg-gradient-to-br from-purple-600 to-pink-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8">
             Ready for Your Beauty Transformation?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-2xl mb-12 opacity-90 leading-relaxed">
             Book your appointment today and experience premium beauty services 
             designed for the Meru University community
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to="/booking"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-600 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center px-10 py-5 bg-white text-purple-600 rounded-xl font-bold text-xl hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Book Now
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-3 w-6 h-6" />
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-all duration-200"
+              className="inline-flex items-center justify-center px-10 py-5 border-2 border-white text-white rounded-xl font-bold text-xl hover:bg-white hover:text-purple-600 transition-all duration-200 transform hover:scale-105"
             >
               Contact Us
             </Link>
